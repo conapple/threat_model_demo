@@ -30,7 +30,7 @@
                   "class": "element-shape hasNoOpenThreats isInScope"
                 },
                 "text": {
-                  "text": "Web\nApplication"
+                  "text": "Web Server"
                 },
                 ".element-text": {
                   "class": "element-text hasNoOpenThreats isInScope"
@@ -179,8 +179,8 @@
                 "height": 80
               },
               "position": {
-                "x": 479,
-                "y": 376
+                "x": 341,
+                "y": 681
               },
               "angle": 0,
               "id": "f800ac45-4921-40b5-ba93-6320412a6e23",
@@ -191,7 +191,7 @@
                   "class": "element-shape hasNoOpenThreats isInScope"
                 },
                 "text": {
-                  "text": "Database"
+                  "text": "User Database"
                 },
                 ".element-text": {
                   "class": "element-text hasNoOpenThreats isInScope"
@@ -202,17 +202,17 @@
               "type": "tm.Boundary",
               "smooth": true,
               "source": {
-                "x": 392,
-                "y": 468
+                "x": 192,
+                "y": 355
               },
               "target": {
-                "x": 657,
-                "y": 314
+                "x": 545,
+                "y": 76
               },
               "vertices": [
                 {
-                  "x": 465,
-                  "y": 323
+                  "x": 418,
+                  "y": 304
                 }
               ],
               "id": "6ce35a5a-aa6f-4e6c-b718-d9de2c8b19ea",
@@ -223,34 +223,170 @@
               "type": "tm.Flow",
               "smooth": true,
               "source": {
-                "id": "accbbe4d-a631-4223-b1b7-dd4db172ceac"
+                "id": "e152e7d1-620e-4516-ba68-114b875c56f6"
               },
               "target": {
-                "id": "f800ac45-4921-40b5-ba93-6320412a6e23"
+                "id": "4105ac9f-c033-451b-818e-754653e6a8c5"
               },
               "vertices": [
                 {
-                  "x": 408,
-                  "y": 397
+                  "x": 370,
+                  "y": 470
                 }
               ],
-              "id": "4cef5823-c824-4aaa-9c67-a3352bcafcf0",
+              "id": "39fff2e5-3da1-4cd8-97d1-c2fe32ff31d4",
               "labels": [
                 {
                   "position": {
-                    "distance": 0.4164598450413538,
-                    "offset": 29.58158288982555
+                    "distance": 0.5073272681438655,
+                    "offset": -69.12635135221544
                   },
                   "attrs": {
                     "text": {
-                      "text": "Query",
+                      "text": "Authentication\nResponse",
                       "font-weight": "400",
                       "font-size": "small"
                     }
                   }
                 }
               ],
-              "z": 8,
+              "z": 9,
+              "hasOpenThreats": false,
+              "isEncrypted": true,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 445,
+                "y": 346
+              },
+              "angle": 0,
+              "id": "4105ac9f-c033-451b-818e-754653e6a8c5",
+              "z": 10,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Banking\nApplication\nServer"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "4105ac9f-c033-451b-818e-754653e6a8c5"
+              },
+              "target": {
+                "x": 546,
+                "y": 545
+              },
+              "vertices": [
+                {
+                  "x": 627,
+                  "y": 453
+                }
+              ],
+              "id": "53e51440-e21d-47d0-8af4-eeb49c133f68",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Authentication\nRequest",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 11,
+              "hasOpenThreats": false,
+              "isEncrypted": true,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 446,
+                "y": 499
+              },
+              "angle": 0,
+              "id": "e152e7d1-620e-4516-ba68-114b875c56f6",
+              "z": 12,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Bank Database\nServer"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "f800ac45-4921-40b5-ba93-6320412a6e23"
+              },
+              "target": {
+                "id": "e152e7d1-620e-4516-ba68-114b875c56f6"
+              },
+              "vertices": [
+                {
+                  "x": 578,
+                  "y": 671
+                }
+              ],
+              "id": "0a34d437-fad7-4661-9695-31afc94b1e7d",
+              "labels": [
+                {
+                  "position": {
+                    "distance": 0.48532156272600874,
+                    "offset": 47.12457905615192
+                  },
+                  "attrs": {
+                    "text": {
+                      "text": "SQL Query",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 13,
               "hasOpenThreats": false,
               "attrs": {
                 ".marker-target": {
@@ -268,31 +404,31 @@
                 "id": "f800ac45-4921-40b5-ba93-6320412a6e23"
               },
               "target": {
-                "id": "accbbe4d-a631-4223-b1b7-dd4db172ceac"
+                "id": "e152e7d1-620e-4516-ba68-114b875c56f6"
               },
               "vertices": [
                 {
-                  "x": 561,
-                  "y": 285
+                  "x": 348,
+                  "y": 618
                 }
               ],
-              "id": "39fff2e5-3da1-4cd8-97d1-c2fe32ff31d4",
+              "id": "49b42aa7-1177-4d59-84a3-27b6ad2a6da1",
               "labels": [
                 {
                   "position": {
-                    "distance": 0.4601088747003028,
-                    "offset": 38.542781798330935
+                    "distance": 0.3797846951435959,
+                    "offset": -70.68319589502981
                   },
                   "attrs": {
                     "text": {
-                      "text": "Query Result",
+                      "text": "Authentication Data",
                       "font-weight": "400",
                       "font-size": "small"
                     }
                   }
                 }
               ],
-              "z": 9,
+              "z": 14,
               "hasOpenThreats": false,
               "attrs": {
                 ".marker-target": {
@@ -302,12 +438,338 @@
                   "class": "connection hasNoOpenThreats isInScope"
                 }
               }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "x": 444,
+                "y": 401
+              },
+              "target": {
+                "id": "accbbe4d-a631-4223-b1b7-dd4db172ceac"
+              },
+              "vertices": [
+                {
+                  "x": 348,
+                  "y": 348
+                }
+              ],
+              "id": "6b7f2955-1c67-40ac-9b53-37925ade695d",
+              "labels": [
+                {
+                  "position": {
+                    "distance": 0.5910058090672066,
+                    "offset": -51.61395160225576
+                  },
+                  "attrs": {
+                    "text": {
+                      "text": "Application Response",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 15,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "accbbe4d-a631-4223-b1b7-dd4db172ceac"
+              },
+              "target": {
+                "id": "4105ac9f-c033-451b-818e-754653e6a8c5"
+              },
+              "vertices": [
+                {
+                  "x": 489,
+                  "y": 288
+                }
+              ],
+              "id": "1fb09b3d-9e3c-4192-b1a7-51425c6238cc",
+              "labels": [
+                {
+                  "position": {
+                    "distance": 0.6327406140631326,
+                    "offset": -47.62561003759492
+                  },
+                  "attrs": {
+                    "text": {
+                      "text": "Application Call",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 16,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Boundary",
+              "smooth": true,
+              "source": {
+                "x": 751,
+                "y": 130
+              },
+              "target": {
+                "x": 736,
+                "y": 608
+              },
+              "vertices": [
+                {
+                  "x": 707,
+                  "y": 504
+                }
+              ],
+              "id": "b05307b2-21bc-419f-a5b4-d0f52c95004c",
+              "z": 17,
+              "attrs": {}
+            },
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 811,
+                "y": 207
+              },
+              "angle": 0,
+              "id": "006e3c3a-40a0-4b22-93ae-4edb0686bfe3",
+              "z": 18,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Financial Server"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "006e3c3a-40a0-4b22-93ae-4edb0686bfe3"
+              },
+              "target": {
+                "id": "ae958086-5bb7-4adb-8d17-840cbb391046"
+              },
+              "vertices": [
+                {
+                  "x": 957,
+                  "y": 347
+                }
+              ],
+              "id": "e9bf12fe-689d-4b78-a361-eff73613d8f6",
+              "labels": [
+                {
+                  "position": {
+                    "distance": 0.4250815278444504,
+                    "offset": -67.53352009045915
+                  },
+                  "attrs": {
+                    "text": {
+                      "text": "Account Query",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 20,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "006e3c3a-40a0-4b22-93ae-4edb0686bfe3"
+              },
+              "target": {
+                "id": "4105ac9f-c033-451b-818e-754653e6a8c5"
+              },
+              "vertices": [
+                {
+                  "x": 678,
+                  "y": 259
+                }
+              ],
+              "id": "c9ed20a5-3295-44db-b1b0-fd4f030b589b",
+              "labels": [
+                {
+                  "position": {
+                    "distance": 0.5336788137088717,
+                    "offset": 28.117068083221852
+                  },
+                  "attrs": {
+                    "text": {
+                      "text": "Data Request",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 21,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "006e3c3a-40a0-4b22-93ae-4edb0686bfe3"
+              },
+              "target": {
+                "id": "4105ac9f-c033-451b-818e-754653e6a8c5"
+              },
+              "vertices": [
+                {
+                  "x": 729,
+                  "y": 344
+                }
+              ],
+              "id": "d976504c-0216-4f1d-afd0-6597dc9969ef",
+              "labels": [
+                {
+                  "position": {
+                    "distance": 0.5992524350002645,
+                    "offset": -27.410077977385694
+                  },
+                  "attrs": {
+                    "text": {
+                      "text": "Data Response",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 22,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "ae958086-5bb7-4adb-8d17-840cbb391046"
+              },
+              "target": {
+                "id": "006e3c3a-40a0-4b22-93ae-4edb0686bfe3"
+              },
+              "vertices": [
+                {
+                  "x": 855,
+                  "y": 391
+                }
+              ],
+              "id": "2547e541-1830-498f-8c0b-0a9fe0068a0a",
+              "labels": [
+                {
+                  "position": {
+                    "distance": 0.4782750169917331,
+                    "offset": -75.74836999743226
+                  },
+                  "attrs": {
+                    "text": {
+                      "text": "Customer Financial\nData",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 23,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Store",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 841,
+                "y": 479
+              },
+              "angle": 0,
+              "id": "ae958086-5bb7-4adb-8d17-840cbb391046",
+              "z": 24,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Financial Database"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
             }
           ]
         },
         "size": {
-          "height": 590,
-          "width": 790
+          "height": 860,
+          "width": 1241
         }
       }
     ]
