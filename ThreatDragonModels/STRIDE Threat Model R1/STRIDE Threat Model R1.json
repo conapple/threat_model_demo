@@ -24,16 +24,24 @@
               "angle": 0,
               "id": "accbbe4d-a631-4223-b1b7-dd4db172ceac",
               "z": 1,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "title": "Denial of Service",
+                  "type": "Denial of service"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Web Server"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -50,16 +58,24 @@
               "angle": 0,
               "id": "0052d2af-95e7-4c52-83d6-4f4262469970",
               "z": 2,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "title": "User Impersonation"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Browser"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -179,22 +195,36 @@
                 "height": 80
               },
               "position": {
-                "x": 341,
-                "y": 681
+                "x": 268,
+                "y": 804
               },
               "angle": 0,
               "id": "f800ac45-4921-40b5-ba93-6320412a6e23",
               "z": 6,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "title": "Credential Theft"
+                },
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "title": "Unauthorized Access",
+                  "type": "Information disclosure"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "User Database"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -295,13 +325,13 @@
                 "id": "4105ac9f-c033-451b-818e-754653e6a8c5"
               },
               "target": {
-                "x": 546,
-                "y": 545
+                "x": 501,
+                "y": 595
               },
               "vertices": [
                 {
-                  "x": 627,
-                  "y": 453
+                  "x": 602,
+                  "y": 479
                 }
               ],
               "id": "53e51440-e21d-47d0-8af4-eeb49c133f68",
@@ -336,8 +366,8 @@
                 "height": 100
               },
               "position": {
-                "x": 446,
-                "y": 499
+                "x": 409,
+                "y": 577
               },
               "angle": 0,
               "id": "e152e7d1-620e-4516-ba68-114b875c56f6",
@@ -366,8 +396,8 @@
               },
               "vertices": [
                 {
-                  "x": 578,
-                  "y": 671
+                  "x": 562,
+                  "y": 748
                 }
               ],
               "id": "0a34d437-fad7-4661-9695-31afc94b1e7d",
@@ -408,8 +438,8 @@
               },
               "vertices": [
                 {
-                  "x": 348,
-                  "y": 618
+                  "x": 335,
+                  "y": 691
                 }
               ],
               "id": "49b42aa7-1177-4d59-84a3-27b6ad2a6da1",
@@ -752,18 +782,47 @@
               "angle": 0,
               "id": "ae958086-5bb7-4adb-8d17-840cbb391046",
               "z": 24,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "title": "Access Finances from Database",
+                  "type": "Information disclosure"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Financial Database"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
+            },
+            {
+              "type": "tm.Boundary",
+              "smooth": true,
+              "source": {
+                "x": 196,
+                "y": 574
+              },
+              "target": {
+                "x": 685,
+                "y": 682
+              },
+              "vertices": [
+                {
+                  "x": 507,
+                  "y": 567
+                }
+              ],
+              "id": "288ce056-96d4-4d88-b8c6-87536c91f521",
+              "z": 25,
+              "attrs": {}
             }
           ]
         },
